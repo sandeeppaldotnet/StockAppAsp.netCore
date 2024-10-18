@@ -19,7 +19,7 @@ namespace StocksApp.Services
             {
                 HttpRequestMessage httpRequestMessage = new HttpRequestMessage()
                 {
-                    //cs8vddpr01qu0vk4j3agcs8vddpr01qu0vk4j3b0
+                   // use finhubkey from user secrets
                     RequestUri = new Uri($"https://finnhub.io/api/v1/quote?symbol={stockSymbol}&token={_configuration["FINHUBKEY"]}"),
                     Method = HttpMethod.Get,
                 };
