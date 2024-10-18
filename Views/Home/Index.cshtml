@@ -1,0 +1,70 @@
+﻿@model StocksApp.Models.StockList
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="box trading-panel">
+
+    <div class="flex-container">
+        <div>
+            <div class="stock">
+                <h1 class="stock-title">@Model.StockMSFT.StockSymbol</h1>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Current:</td>
+                            <th><small>$</small> <span class="price">@Model.StockMSFT.CurrentPrice.ToString("N")</span></th>
+                        </tr>
+
+                        <tr>
+                            <td>High:</td>
+                            <th><small>$</small> <span class="price">@Model.StockMSFT.HighestPrice.ToString("N")</span></th>
+                        </tr>
+
+                        <tr>
+                            <td>Low:</td>
+                            <th><small>$</small> <span class="price">@Model.StockMSFT.LowestPrie.ToString("N")</span></th>
+                        </tr>
+
+                        <tr>
+                            <td>Open:</td>
+                            <th><small>$</small> <span class="price">@Model.StockMSFT.OpenPrice.ToString("N")</span></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div class="stock">
+                <h1 class="stock-title">@Model.StockAAPL.StockSymbol</h1>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Current:</td>
+                            <th><small>$</small> <span class="price">@Model.StockAAPL.CurrentPrice.ToString("N")</span></th>
+                        </tr>
+
+                        <tr>
+                            <td>High:</td>
+                            <th><small>$</small> <span class="price">@Model.StockAAPL.HighestPrice.ToString("N")</span></th>
+                        </tr>
+
+                        <tr>
+                            <td>Low:</td>
+                            <th><small>$</small> <span class="price">@Model.StockAAPL.LowestPrie.ToString("N")</span></th>
+                        </tr>
+
+                        <tr>
+                            <td>Open:</td>
+                            <th><small>$</small> <span class="price">@Model.StockAAPL.OpenPrice.ToString("N")</span></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
